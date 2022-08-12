@@ -2,7 +2,7 @@ def fib(n):
     a=0
     b=1
     if n==1:
-    print(a)
+        print(a)
     else:
         print(a)
         print(b)
