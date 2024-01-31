@@ -7,6 +7,6 @@ def is_leap(year): # in bracket for input year is def f (a,b)    a=year
     else:
         leap = False  
         return leap
-
+        
 year = int(input())
 print( is_leap(year))
