@@ -1,0 +1,61 @@
+https://www.codechef.com/problems/ADVITIYA4
+
+// #include <iostream>
+// #include <algorithm>
+#include <bits/stdc++.h>
+using namespace std;
+int max(int a, int b)
+{
+    if(a>b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,m;
+	     string s;
+	    cin>>n>>m>>s;
+	    int c=1;
+	    int ans =1;
+	   for(int i=1;i<n;i++)
+	   {
+	       if(s[i] == s[i-1])
+	       {
+	           c++;
+	           ans = max(ans,c);
+	       }
+	       else
+	       {
+	           c=1;
+	       }
+	   }
+	   cout<<ans <<" ";
+	  for(int i=n;i<(n+m);i++)
+	  {
+	      char ch;
+	      cin>>ch;
+	      s+=ch;
+	      if(s[i] == s[i-1])
+	      {
+	          c++;
+	          ans = max(ans,c);
+	      }
+	      else
+	      {
+	          c=1;
+	      }
+	    cout<<ans <<" ";
+	  }
+	  cout<<endl;
+	}
+    return 0;
+}
