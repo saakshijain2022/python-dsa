@@ -10,6 +10,6 @@
     for i in range(0,n):  
        if n == 0:
          break
-    
+           
        else:
          print(i**2)
